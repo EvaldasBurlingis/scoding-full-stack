@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "scoding-full-stack",
+            "database": "${workspaceFolder:rest-api}/database/database.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

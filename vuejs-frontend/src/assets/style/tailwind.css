@@ -1,0 +1,103 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* BASE */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.modal--wrapper {
+    @apply fixed left-0 w-full z-10 flex items-center min-h-screen top-0;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* FORM */
+.form--label {
+    @apply block text-gray-600 text-sm font-medium mb-2;
+}
+
+.form--input {
+    @apply bg-white text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full focus:border-blue-500 focus:outline-none focus:ring;
+}
+
+.form--input__disabled {
+    @apply bg-gray-200;
+}
+
+.form--filter-label {
+    @apply text-black tracking-tight text-xs;
+}
+.form--filter-input {
+    @apply text-xs border-none bg-transparent text-purple-600 pl-2 pr-4;
+}
+
+/* BUTTONS */
+.btn {
+    @apply text-white font-bold py-2 px-4 text-sm rounded focus:outline-none 
+}
+
+.btn__dark {
+    @apply bg-gray-700 hover:bg-gray-600 focus:bg-gray-600;
+}
+
+
+.btn__purple {
+    @apply bg-purple-700 hover:bg-purple-600 focus:bg-purple-600;
+}
+
+.btn__green {
+    @apply bg-green-700 hover:bg-green-600 focus:bg-green-600;
+}
+
+.pill {
+   @apply block py-1 rounded-full text-center w-32;
+}
+
+.pill__blue {
+    @apply text-blue-600 bg-blue-100 
+}
+
+.pill__yellow {
+    @apply text-yellow-600 bg-yellow-100 
+}
+
+.pill__green {
+    @apply text-green-600 bg-green-100 
+}
+
+/* TABLE */
+.table {
+    @apply min-w-full;
+    @apply divide-y;
+    @apply divide-gray-200;
+}
+
+@media (max-width: 1200px) {
+    .table {
+        @apply min-w-full;
+        @apply divide-y;
+        @apply divide-gray-200;
+        display: block;
+        max-width: fit-content;
+        margin: 0 auto;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.th {
+    @apply px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider
+}
+
+.tbody {
+    @apply bg-white divide-y divide-gray-200;
+}
+
+.td {
+    @apply px-6 py-4 whitespace-nowrap text-sm text-gray-500;
+}
