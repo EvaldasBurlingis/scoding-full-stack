@@ -16,6 +16,12 @@ Simple Laravel REST API + Vuejs web application. It has admin and user sections,
 
 ---
 
+## To-do
+
+* [] Refactor vuejs code
+
+---
+
 ## Stack
 📦 [Laravel Permissions](https://spatie.be/docs/laravel-permission/v3introduction)  
 📦 [Sanctum](https://laravel.com/docs/8.x/sanctum)   
